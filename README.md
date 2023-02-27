@@ -1,1 +1,0 @@
-# kas-vyksta-tavo-mieste
