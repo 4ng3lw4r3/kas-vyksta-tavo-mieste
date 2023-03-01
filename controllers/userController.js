@@ -109,7 +109,7 @@ const getAllUsers = asyncHandler(async (req, res) => {
 
 // generate JWT
 const generateToken = (id) => {
-    return jwt.sign({ id }, process.env/* irasyti jwt secret key*/, {
+    return jwt.sign({ id }, process.env.SECRET, {
         expiresIn: '30d',
     });
 };

@@ -4,7 +4,7 @@ const {
     registerUser,
     loginUser,
     getUser,
-    getUsers
+    getAllUsers
 } = require('../controllers/userController');
 
 const { protect } = require('../middleware/authMiddleware');
@@ -13,6 +13,6 @@ const { protectAdmin } = require('../middleware/adminAuthMiddleware');
 router.post('/', registerUser);
 router.post('/login', loginUser);
 router.get('/user', protect, getUser);
-router.get('/list', protectAdmin, getUsers)
+router.get('/list', protectAdmin, getAllUsers)
 
 module.exports = router

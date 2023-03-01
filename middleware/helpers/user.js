@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const User = require("../../models/userModel");
+const User = require("../../models/UserModel");
 
 const NOT_AUTHORIZED = "Not authorized";
 const NOT_AUTHORIZED_NO_TOKEN = "Not authorized, no token";
