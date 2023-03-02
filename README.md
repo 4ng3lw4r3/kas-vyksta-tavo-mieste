@@ -87,6 +87,9 @@ Type `npm run demon` in console to start the project
 ## Delete your event
 1. Follow the same steps as **Registration** up to the 6th step
 2. Instead of the **POST** method select the **DELETE** method
-2. Replace the request URL with `http://localhost:6655/api/events/`
-3. Add your event ID to the request URL, example: `http://localhost:6655/api/events/6400bda8526d8000fd9d9656`
-4. Click **Send**
+3. Replace the request URL with `http://localhost:6655/api/events/`
+4. Add your event ID to the request URL, example: `http://localhost:6655/api/events/6400bda8526d8000fd9d9656`
+5. Click **Headers** left to the **Body**
+6. Write `Authorization` in the **Key** field
+7. Write `Bearer your_copied_token` in the **Value** field
+8. Click **Send**
