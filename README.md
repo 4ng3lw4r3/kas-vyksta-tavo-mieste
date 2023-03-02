@@ -38,8 +38,6 @@ Type `npm run demon` in console to start the project
 4. Click **Send**
 5. Copy the string after **"token":** for later
 
-"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDBiYjc1NTViYmVjOWE0Yjc3NWNmMiIsImlhdCI6MTY3Nzc2OTU4OSwiZXhwIjoxNjgwMzYxNTg5fQ.qkN5cwCy8bdJkIMz5sYtPX0NUzXdeIfTjXk5GViTM7U"
-
 ## Show all events
 1. Open [Postman](https://www.postman.com/)
 2. Click **New** and select **HTTP Request**
