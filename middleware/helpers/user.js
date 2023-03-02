@@ -16,7 +16,7 @@ async function getUser(req) {
         return { status: 401, response: NOT_AUTHORIZED_NO_TOKEN };
       }
 
-      const decoded = jwt.verify(token, process.env.JWT_SECRET);
+      const decoded = jwt.verify(token, process.env.SECRET);
       const user = await User.findById(decoded.id).select("-password");
 
       return { status: 200, response: user };

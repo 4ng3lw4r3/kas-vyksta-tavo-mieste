@@ -7,6 +7,7 @@ const eventSchema = require("../models/EventModel");
 // @access Public
 const setEvent = asyncHandler(async (req, res) => {
   if (
+    !req.body.host ||
     !req.body.email ||
     !req.body.event_location ||
     !req.body.event_date ||
@@ -17,7 +18,7 @@ const setEvent = asyncHandler(async (req, res) => {
   }
 
   const createEvent = await eventSchema.create({
-    eventHostName: req.body.eventHostName,
+    host: req.body.host,
     email: req.body.email,
     event_location: req.body.event_location,
     event_date: req.body.event_date,
@@ -31,7 +32,7 @@ const setEvent = asyncHandler(async (req, res) => {
 // @route GET /api/events
 // @access Public
 const getEvents = asyncHandler(async (req, res) => {
-    const events = await eventSchema.find({});
+    const events = await eventSchema.find();
     res.status(200).json(events);
 })
 
