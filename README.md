@@ -50,7 +50,7 @@ Type `npm run demon` in console to start the project
 3. In body paste the following text and replace the required fields:
 ```
 {
-    "host": "John Doe",
+    "host": "6400bda8526d8000fd9d412sd",
     "email": "example@email.com",
     "event_location": "your_event_location",
     "event_date": "your_event_date",
@@ -70,7 +70,7 @@ Type `npm run demon` in console to start the project
 4. In body paste the following text and replace the required fields:
 ```
 {
-    "host": "John Doe",
+    "host": "6400bda8526d8000fd9d9656",
     "email": "example@email.com",
     "event_location": "your_edited_event_location",
     "event_date": "your_edited_event_date",
